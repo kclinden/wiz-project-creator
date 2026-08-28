@@ -1,10 +1,66 @@
 projects:
-  - name: example-production
-    description: Production workloads
-    business_unit: Technology
+  - name: Widgets
+    slug: widgets
+    business_unit: Widgets
+    description: Widgets business unit folder
+    tags:
+      - key: owner
+        value: Kasey Linden
+    is_folder: true
+
+  - name: Widgets-Prod
+    slug: widgets-prod
+    business_unit: Widgets
+    description: Widgets production workloads
+    tags:
+      - key: owner
+        value: Kasey Linden
+    cloud_account_tags_links:
+      - environment: PRODUCTION
+        shared: false
+        cloud_account_tags_v3:
+          equals_any:
+            - key_equals: env
+              value_equals: prod
+            - key_equals: team
+              value_equals: widgets
+    parent_project_name: Widgets
     business_impact: HBI
 
-  - name: example-staging
-    description: Staging workloads
-    business_unit: Technology
+  - name: Widgets-Test
+    slug: widgets-test
+    business_unit: Widgets
+    description: Widgets test workloads
+    tags:
+      - key: owner
+        value: Kasey Linden
+    cloud_account_tags_links:
+      - environment: DEVELOPMENT
+        shared: false
+        cloud_account_tags_v3:
+          equals_any:
+            - key_equals: env
+              value_equals: test
+            - key_equals: team
+              value_equals: widgets
+    parent_project_name: Widgets
     business_impact: MBI
+
+  - name: Widget-Dev
+    slug: widget-dev
+    business_unit: Widgets
+    description: Widgets development workloads
+    tags:
+      - key: owner
+        value: Kasey Linden
+    cloud_account_tags_links:
+      - environment: DEVELOPMENT
+        shared: false
+        cloud_account_tags_v3:
+          equals_any:
+            - key_equals: env
+              value_equals: dev
+            - key_equals: team
+              value_equals: widgets
+    parent_project_name: Widgets
+    business_impact: LBI

@@ -1,3 +1,4 @@
+// Inputs for project config location and Wiz authentication.
 variable "projects_yaml_path" {
   description = "Path to the YAML file that defines Wiz projects."
   type        = string
