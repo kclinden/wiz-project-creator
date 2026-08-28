@@ -1,4 +1,6 @@
-// Inputs for project config location and Wiz authentication.
+// Module inputs for project catalog location and Wiz API authentication.
+// Sensitive values should come from local tfvars or environment variables and
+// should not be committed to source control.
 variable "projects_yaml_path" {
   description = "Path to the YAML file that defines Wiz projects."
   type        = string
