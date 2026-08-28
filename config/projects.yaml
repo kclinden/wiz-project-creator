@@ -1,0 +1,10 @@
+projects:
+  - name: example-production
+    description: Production workloads
+    business_unit: Technology
+    business_impact: HBI
+
+  - name: example-staging
+    description: Staging workloads
+    business_unit: Technology
+    business_impact: MBI
