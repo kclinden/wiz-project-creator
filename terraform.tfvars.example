@@ -1,0 +1,11 @@
+# Copy this file to terraform.tfvars and replace placeholders with real values.
+# Do not commit terraform.tfvars with real credentials.
+
+wiz_auth_client_id     = "your-wiz-client-id"
+wiz_auth_client_secret = "your-wiz-client-secret"
+wiz_url                = "https://api.us1.app.wiz.us/graphql"
+# Optional; defaults to "wiz-api" if omitted.
+# wiz_auth_audience    = "wiz-api"
+
+# Optional; defaults to "config/projects.yaml" if omitted.
+# projects_yaml_path   = "config/projects.yaml"
